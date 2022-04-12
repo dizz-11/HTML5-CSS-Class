@@ -1,0 +1,113 @@
+/* a css comment */
+/* the * is a universal selector that affects everything on the page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2BBEF;
+  font-family: arial, verdana, sans-serif;
+  font-size: 18px;
+}
+
+header {
+  background-color: #D9D6D2;
+  color: #590253;
+  text-align:center;
+  text-transform: capitalize;
+  padding: 20px;
+  border-bottom: 10px solid #eee;
+}
+
+nav {
+  margin: 0 auto;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 20px;
+}
+
+nav a {
+  margin: 0 auto;
+  text-transform: capitalize;
+  padding-right: 5px;
+}
+
+  nav a:link {
+    color: black;
+  }
+
+  nav a:hover {
+    color: #gray;
+  }
+
+  nav a:visited {
+    color: black
+  }
+
+h1 {
+  font-family: georgia, times, serif;
+  font-size: 70px;
+}
+
+article {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+article h2 {
+  color:gray;
+  text-align:center;
+  font-size: 24px;
+}
+
+h3 {
+  color:#392D13;
+  text-align:center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+h4 {
+  color:#392D13;
+  text-align:center;
+}
+
+article p {
+  text-align:justify;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+
+img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+figure {
+  margin-bottom: 20px;
+}
+
+figcaption {
+  text-align: center;
+  padding-top: 5px;
+  font-family: georgia, times, serif;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-style: italic;
+  color: #333;
+}
+
+footer {
+  background-color: #261514;
+  color: white;
+  text-align: right;
+  padding: 20px;
+  border-top: 10px solid #eee;
+}
