@@ -1,15 +1,32 @@
-/* a css comment */
-/* the * is a universal selector that affects everything on the page*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
+
 body {
-  background-color: #F2BBEF;
-  font-family: arial, verdana, sans-serif;
+  font-family: 'Fira Sans', arial, verdana, sans-serif;
   font-size: 18px;
+}
+
+#orchid {
+  background-color: #F2BBEF;
+}
+
+#lily {
+  background-color: #D8DAE2;
+}
+
+#dahlia {
+  background-color: #A8929C;
+}
+
+#sunflower {
+  background-color: #B6C351;
 }
 
 header {
@@ -28,26 +45,30 @@ nav {
   padding: 20px;
 }
 
-nav a {
-  margin: 0 auto;
-  text-transform: capitalize;
-  padding-right: 5px;
+nav a:link {
+  color: black;
+  margin: 0px 10px;
+  text-decoration: none;
 }
 
-  nav a:link {
-    color: black;
-  }
+nav a:visited {
+  color: black;
+}
 
-  nav a:hover {
-    color: gray;
-  }
+nav a:hover {
+  color: #830283;
+}
 
-  nav a:visited {
-    color: black
-  }
+nav a:active {
+  color: crimson;
+}
+
+nav a.current {
+  text-decoration: underline;
+}
 
 h1 {
-  font-family: georgia, times, serif;
+  font-family: 'Roboto', arial, helvetica, sans-serif;
   font-size: 70px;
 }
 
@@ -55,12 +76,20 @@ article {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
-article h2 {
+article h2, section h2 {
   color:gray;
   text-align:center;
-  font-size: 24px;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.darkgray {
+  color: #555;
+  text-shadow: 2px 2px 4px #222;
 }
 
 h3 {
@@ -81,6 +110,53 @@ article p {
   line-height: 24px;
 }
 
+.pull {
+  background: url(../images/bkg.jpg) fixed;
+  font-size: 42px;
+  line-height: 48px;
+  padding: 20px;
+  margin: 0 40px 20px;
+  border-left: solid #333 50px;
+  font-family: 'Roboto', arial, helvetica, sans-serif;
+  font-style: italic;
+}
+
+article a:link {
+  color: #444;
+  text-decoration: none;
+  border-bottom: solid 1px #444;
+}
+
+article a:visited {
+  color: #444;
+  border-bottom: solid 1px #444;
+}
+
+article a:hover {
+  color: black;
+  border-bottom: solid 1px black;
+}
+
+section.divider {
+  width: 100%;
+  height: 33vh;
+  background: url(../images/orchidbkg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+article.multi {
+  column-count: 2;
+  column-gap: 40px;
+}
+
+article.multi h2 {
+  column-span: all;
+}
+
 img {
   display:block;
   margin-left:auto;
@@ -97,7 +173,7 @@ figure {
 figcaption {
   text-align: center;
   padding-top: 5px;
-  font-family: georgia, times, serif;
+  font-family: 'Roboto', arial, helvetica, sans-serif;
   font-size: 14px;
   text-transform: capitalize;
   font-style: italic;
