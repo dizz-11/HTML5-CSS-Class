@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: Arial, verdana, sans-serif;
+}
+
+header {
+  background: #eee;
+  padding: 20px;
+  height:25vh;
+  display: flex;
+  align-items: center;
+}
+
+header p {
+  padding-left: 20px;
+  font-size: 4em;
+  text-transform:uppercase;
+  z-index: 999;
+}
+
+header img {
+  z-index: 999;
+}
+
+nav {
+  color: black;
+  padding: 20px;
+  z-index: 998;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: right;
+  text-transform: capitalize;
+  background: #eee;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+nav a:link {
+  color: black;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: black;
+}
+
+nav a:hover {
+  color: #830283;
+}
+
+nav a:active {
+  color: crimson;
+}
+
+nav a.currentlightning {
+  text-decoration: underline;
+  color: #F2AE2E;
+}
+
+section h1 {
+  font-size: 4em;
+  color: #555;
+  text-transform: uppercase;
+  padding: 20px;
+  position: absolute;
+  left: 75vw;
+}
+
+.quotesection {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+p.pull {
+  font-size: 42px;
+  line-height: 48px;
+  font-family: 'Roboto', arial, helvetica, sans-serif;
+  font-style: italic;
+  background-size: cover;
+  padding-bottom: 40px;
+}
+
+.pulltext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+  .pulltext p {
+    padding-bottom: 20px;
+  }
+
+.quoteimg {
+  width: auto;
+  max-width: 40vw;
+  background-size: contain;
+  border-right: solid #555 50px;
+}
+
+table {
+  width: 25vh;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+td {
+  border: #555 2px solid;
+  padding: 8px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+td.firstcolumn {
+  text-align: left;
+  font-weight: bold;
+  background: #F2EFC4;
+}
+
+.str_wkn {
+  height: 15vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.str_wkn div {
+  display: flex;
+}
+
+.titlestrengths {
+  background: url(../images/lightning.jpg) center center fixed;
+  background-size: cover;
+  height: 15vw;
+  width: 75vw;
+  color: white;
+  padding-right: 20px;
+  font-size: 3em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  border-top: white 2px solid;
+}
+
+.imgstr_wkn{
+  height: 12vw;
+  padding: 2em;
+}
+
+.evolution {
+  background: #eee;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.evolution figure {
+  background: white;
+  border: solid black;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  background: #CD3D3A;
+  border-top: #fff solid 5px;
+  padding: 40px;
+  text-align: right;
+}

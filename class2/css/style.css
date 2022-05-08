@@ -124,6 +124,7 @@ article p {
   font-style: italic;
   border-top-left-radius: 15px;
   column-span: all;
+  color: white;
 }
 
 article a:link {
