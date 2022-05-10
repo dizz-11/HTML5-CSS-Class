@@ -77,42 +77,53 @@ nav a.currentlightning {
 }
 
 .quotesection {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 50px 1fr;
+  min-height: 75vh;
 }
 
 p.pull {
-  font-size: 42px;
+  font-size: 4vmin;
   line-height: 48px;
   font-family: 'Roboto', arial, helvetica, sans-serif;
   font-style: italic;
   background-size: cover;
   padding-bottom: 40px;
+  grid-column: 2 / 5;
+  grid-row: 1 / 2;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 .pulltext {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  grid-column: 2 / 6;
+  grid-row: 2/3;
 }
-  .pulltext p {
-    padding-bottom: 20px;
-  }
+
+.pulltext2 {
+  padding-top: 20px;
+  padding-left: 20px;
+  grid-column: 2 / 6;
+  grid-row: 3/4;
+}
 
 .quoteimg {
   width: auto;
   max-width: 40vw;
   background-size: contain;
   border-right: solid #555 50px;
+  grid-column: 1 /2;
+  grid-row: 1 / 5;
 }
 
 table {
   width: 25vh;
   border-collapse: collapse;
   margin-top: 10px;
+  background: #eee;
 }
 
 td {
@@ -125,24 +136,55 @@ td {
 td.firstcolumn {
   text-align: left;
   font-weight: bold;
-  background: #F2EFC4;
 }
 
-.hor_div {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row;
-}
-
-.ver_div {
+.base_stats {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  grid-column: 2/3;
+  grid-row:4/6;
+  background: #999;
+  border-radius: 10px;
+  padding: 4%;
 }
 
+.strengths_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
 
+.weak_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+
+.str_img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 3/4;
+  grid-row: 4/6;
+  background: #999;
+  border-radius: 10px;
+  padding: 4%;
+}
+
+.wkn_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
 
 .divider {
   display: flex;
