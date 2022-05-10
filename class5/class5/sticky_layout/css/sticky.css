@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width:100%;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* uncomment this to see the height of each section */
+/* section:nth-child(odd) {
+  background: crimson;
+  color: #fff;
+}
+section:nth-child(even) {
+  background: darkseagreen;
+  color: #fff;
+} */
+
+
+h1 {
+  font-size: 5vmax;
+}
+
+h1.stick {
+  position: sticky;
+  top: 200px;
+}

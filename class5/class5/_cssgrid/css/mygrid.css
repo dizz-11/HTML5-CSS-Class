@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.parent {
+  width:100%;
+  height: 100vh;
+  background: #fff;
+  border: 20px solid #fff;
+  display:grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-gap: 20px;
+}
+
+article {
+  background: #333;
+  color:#fff;
+  padding: 20px;
+  font-size: 4vmax;
+  border-radius: 10px;
+}
+
+.a1 {
+  background: crimson;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.a2 {
+  background: cadetblue;
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+.a6 {
+  background: darkseagreen;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.a5 {
+  background: crimson;
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}

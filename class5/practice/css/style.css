@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+section:nth-child(odd) {
+  background: darkseagreen;
+}
+
+section:nth-child(even) {
+  background: cadetblue;
+}
+
+h1.stick {
+  position: sticky;
+  font-size: 5vmax;
+  top: 200px;
+  width: 50%;
+}
+
+article.text {
+  width:40%;
+  border: solid 1px crimson;
+}
+
+p{
+  margin-bottom: 40px;
+  font-size: 20px;
+}
