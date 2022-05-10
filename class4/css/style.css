@@ -7,25 +7,28 @@
 body {
   font-size: 18px;
   font-family: Arial, verdana, sans-serif;
+  background: #F2EFC4;
 }
 
 header {
   background: #eee;
   padding: 20px;
-  height:25vh;
+  height:auto;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+  width: 100%;
+  z-index: 999;
 }
 
 header p {
   padding-left: 20px;
-  font-size: 4em;
-  text-transform:uppercase;
-  z-index: 999;
+  font-size: 4vmax;
+  text-transform: uppercase;
 }
 
 header img {
-  z-index: 999;
+  max-height: 64px;
 }
 
 nav {
@@ -33,13 +36,10 @@ nav {
   padding: 20px;
   z-index: 998;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
   text-align: right;
   text-transform: capitalize;
   background: #eee;
-  font-size: 1.5em;
+  font-size: 1em;
   padding: 1em;
 }
 
@@ -66,13 +66,14 @@ nav a.currentlightning {
   color: #F2AE2E;
 }
 
-section h1 {
-  font-size: 4em;
+.bigtext {
+  font-size: 4vmax;
   color: #555;
   text-transform: uppercase;
   padding: 20px;
   position: absolute;
   left: 75vw;
+  top: 12vh;
 }
 
 .quotesection {
@@ -127,42 +128,60 @@ td.firstcolumn {
   background: #F2EFC4;
 }
 
-.str_wkn {
-  height: 15vw;
+.hor_div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
 }
 
-.str_wkn div {
+.ver_div {
   display: flex;
-}
-
-.titlestrengths {
-  background: url(../images/lightning.jpg) center center fixed;
-  background-size: cover;
-  height: 15vw;
-  width: 75vw;
-  color: white;
-  padding-right: 20px;
-  font-size: 3em;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  font-weight: bold;
-  border-top: white 2px solid;
+  flex-direction: column;
 }
 
-.imgstr_wkn{
-  height: 12vw;
-  padding: 2em;
+
+
+.divider {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  background: url(../images/gray-white-pixelated.jpg) center center fixed;
+  background-size: cover;
+  height: 25vh;
+  color: #555;
+}
+
+.dividerh1 {
+  font-size: 4vmax;
+  color: #555;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+article {
+  padding: 20px 20px 20px 20px;
+  columns: 2;
+}
+
+article h1 {
+  column-span: all;
+  font-size: 3em;
+  font-family: Roboto;
+  text-align: center;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.1em;
 }
 
 .evolution {
   background: #eee;
-  padding: 20px;
+  padding: 50px;
   display: flex;
   justify-content: space-evenly;
 }
