@@ -7,7 +7,22 @@
 body {
   font-size: 18px;
   font-family: 'Roboto', Arial, verdana, sans-serif;
+}
+
+#electric {
   background: #F2EFC4;
+}
+
+#fire {
+  background: #FDCF48;
+}
+
+#grass {
+  background: #BED95F;
+}
+
+#water {
+  background: #D0F2EC;
 }
 
 header {
@@ -68,7 +83,17 @@ nav a.currentlightning {
 
 nav a.currentfire {
   text-decoration: underline;
-  color: #F2AE2E;
+  color: #D92949;
+}
+
+nav a.currentgrass {
+  text-decoration: underline;
+  color: #8CBF3F;
+}
+
+nav a.currentwater {
+  text-decoration: underline;
+  color: #389BA6;
 }
 
 .bigtext {
@@ -215,6 +240,9 @@ td.firstcolumn {
 article {
   padding: 20px 20px 20px 20px;
   columns: 2;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 article h1 {
@@ -227,6 +255,7 @@ article h1 {
 p {
   font-size: 1em;
   line-height: 1.1em;
+  padding-bottom: 20px;
 }
 
 .evolution {
