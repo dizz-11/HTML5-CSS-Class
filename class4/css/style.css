@@ -111,6 +111,7 @@ nav a.currentwater {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto 1fr;
   height: auto;
+  min-height: 85vh;
   grid-column-gap: 2%;
   margin-bottom: 2%;
 }
