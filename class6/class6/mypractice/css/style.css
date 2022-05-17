@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+}
+
+header {
+  width:100%;
+  min-height: 100vh;
+  height: auto;
+  display:flex;
+  flex-flow: row wrap;
+  /* padding: 4em; */
+}
+
+header div {
+  flex-grow: 1;
+  /* these div are children of the header and flex-grow makes them equal size */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  /* they are also parents of the headlines so we can use flex to center their children */
+  /* padding: 4em; */
+  transition: all .5s;
+}
+
+
+header div.left {
+  background: url(../images/spring.jpg) fixed no-repeat center center;
+  background-size: cover;
+}
+header div.left:hover {
+  flex-grow: 4;
+}
+
+header div.right {
+  background: url(../images/splash.jpg) fixed no-repeat center center;
+  background-size: cover;
+}
+
+header div.right:hover {
+  flex-grow: 4;
+}
+
+h1.banner {
+  /* border:1px solid red; */
+  text-align: center;
+  padding: 1.5em 1.5em 0;
+  font-size: 4em;
+  color:#333;
+}
+
+section.gallery {
+  width:100%;
+  min-height: 60vh;
+  height: auto;
+  /* border:1px solid green; */
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section.gallery div {
+  width:300px;
+  height: 300px;
+  background: #333;
+  color:#fff;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  transition: all .5s;
+}
+
+section.gallery div:hover {
+  background: greenyellow;
+  color:#333;
+  /* width:350px;
+  height: 350px; */
+  transform: scale(1.2) rotate(-2deg);
+}

@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font:  16px/1.5 verdana, sans-serif;
+  overflow:hidden;
+}
+
+header h1 {
+  font-size: 72px;
+  display:inline-block;
+  /* if animating position element must be relative or absolute */
+  position:relative;
+  top:200px;
+  left:0;
+  opacity:0;
+  filter: blur(50px);
+
+  animation: slide-in 0.6s 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards;
+  /* border:solid red 1px; */
+}
+
+@keyframes slide-in {
+  from {opacity:0; top:200px; filter: blur(50px);}
+  to {opacity:1; top:0; filter: blur(0);}
+}
+
+/* animation example triggered by :hover using multiple steps */
+#anim {
+  width:100px;
+  height: 100px;
+  background: darkorange;
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+  position: absolute;
+  top:100px;
+  right:100px;
+}
+#anim:hover {
+  animation: rotate-me 4s linear infinite;
+}
+
+@keyframes rotate-me {
+  0% {transform: rotate(0deg); background: darkorange;}
+  25% {background: cadetblue;}
+  50% {background: crimson;}
+  75% {background: green;}
+  100% {transform: rotate(360deg); background: darkorange;}
+}
