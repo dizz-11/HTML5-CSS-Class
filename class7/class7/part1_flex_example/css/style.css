@@ -1,0 +1,76 @@
+/* === MOBILE FIRST === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.parent {
+  width:100%;
+  min-height: 100vh;
+  height:auto;
+  /* this allows the height to be bigger than 100vh if needed */
+  background:orangered;
+  display:flex;
+  flex-flow: row wrap;
+}
+
+.art {
+  width:100%;
+  min-height: 80vh;
+  height:auto;
+  padding:20px;
+  background:cadetblue;
+  display:flex;
+  align-items: center;
+}
+
+.art article {
+  column-count: 1;
+}
+
+figure {
+  flex:1 100%;
+  background:#fff;
+  padding:20px;
+  /* margin: 20px; */
+}
+
+figure img {
+  width:100%;
+}
+
+/* === TABLET LAYOUT INHERITS FROM MOBILE 600PX 980PX === */
+@media only screen and (min-width: 600px) {
+    .parent {
+      align-content: space-evenly;
+    }
+    figure {
+        flex:1 50%;
+    }
+    .art {
+        min-height: 50vh;
+    }
+    .art article {
+      column-count: 2;
+    }
+}
+
+/* === DESKTOP LAYOUT INHERITS FROM MOBILE AND TABLET > 980PX === */
+@media only screen and (min-width: 980px) {
+  .parent {
+    min-height:70vh;
+    justify-content: space-between;
+  }
+  figure {
+      flex:1 20%;
+      margin: 20px;
+  }
+  .art article {
+    column-count: 3;
+  }
+}
