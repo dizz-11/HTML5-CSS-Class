@@ -1,0 +1,103 @@
+/* === GRID AREA NAME EXAMPLE === */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*  === MOBILE FIRST === */
+/* === DEFINE THE GRID AREAS === */
+.sidebar1 {
+    grid-area: sidebar1;
+}
+
+.sidebar2 {
+    grid-area: sidebar2;
+}
+
+.content {
+    grid-area: content;
+}
+
+.header {		
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+/* === PHONE VIEW FIRST === */
+section.parent {
+    background-color: #fff;
+	color: #444;
+	width:100%;
+    min-height: 70vh;
+    height: auto;
+    display:grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "header"
+    "sidebar1"
+    "sidebar2"
+    "content"
+    "footer";
+
+    padding:20px;
+}
+
+.box {
+    background-color: #444;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 3vmax; 
+}
+
+.header, .footer {
+    background-color: #999;
+}
+
+.sidebar1, .sidebar2 {
+    background-color: #666;
+}
+section.about {
+    /* place about page infor here too */
+}
+
+/* ===================================== */
+/* === TABLET VIEW 600PX AND LARGER ===*/
+/* ===================================== */
+
+@media only screen and (min-width: 600px)  {
+   section.parent {
+     grid-template-columns: 1fr 4fr;
+     grid-template-areas:
+			"header   header"
+			"sidebar1  content"
+			"sidebar2 sidebar2"
+			"footer   footer";
+   }
+   section.about {
+        /* place about page infor here too */
+   }
+}
+
+
+
+/* ===================================== */
+/* === DESKTOP VIEW 600PX AND LARGER ===*/
+/* ===================================== */
+
+@media only screen and (min-width: 980px)  {
+    .sidebar2 {
+        display:none;
+    }
+    section.parent {
+      grid-template-columns: 4fr 1fr 1fr;
+      grid-template-areas:
+             "header    header  sidebar1"
+             "content content sidebar1"
+             "footer    footer  sidebar1";
+    }
+ }
