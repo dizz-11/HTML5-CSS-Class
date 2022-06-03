@@ -5,7 +5,7 @@
 }
 
 body {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 nav {
@@ -21,7 +21,7 @@ nav {
 hgroup {
   text-align:right;
   padding: 2%;
-  background: darkgray;
+  background: #9e8fcb;
   margin-bottom: 4%;
 }
 
@@ -29,6 +29,7 @@ hgroup {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  font-size: 18px;
 }
 
 nav a.current {
@@ -123,11 +124,17 @@ p {
   align-items: flex-start;
 }
 
+ul {
+  font-size: 3.2vmin;
+  padding-bottom: 3%;
+}
+
 footer {
   height: auto;
   background-color: #CBC3E3;
   text-align: center;
   padding: 5vh;
+  font-size: 3.2vmin;
 }
 
 @media only screen and (min-width: 980px)  {
@@ -157,5 +164,13 @@ footer {
     .author img {
       max-width: 350px;
       width: 25vw;
+    }
+
+    ul {
+      font-size: 18px;
+    }
+
+    footer {
+      font-size: 18px;
     }
  }
