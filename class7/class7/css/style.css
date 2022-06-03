@@ -5,11 +5,12 @@
 }
 
 body {
-
+  font-size: 18px;
 }
 
 nav {
   position: fixed;
+  top: 0;
   width: 100vh;
   height: auto;
   transform-origin: left top;
@@ -17,10 +18,22 @@ nav {
   text-align: center;
 }
 
+hgroup {
+  text-align:right;
+  padding: 2%;
+  background: darkgray;
+  margin-bottom: 4%;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-content: center;
+}
+
+nav a.current {
+  background: #CBC3E3;
+  text-shadow: 2px 2px 2px #777;
 }
 
 .navbar a {
@@ -55,18 +68,16 @@ nav {
   }
 }
 
-hgroup {
-  text-align:right;
-  padding: 2%;
-  background: darkgray;
-  margin-bottom: 4%;
-}
-
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.book {
+  border-bottom: 2px solid #eee;
+  margin-bottom: 2%;
 }
 
 figure {
@@ -84,6 +95,67 @@ figcaption {
 }
 
 p {
-  padding: 3% 3% 3% 12%;
-  font-size: 3.5vmin;
+  padding: 3% 3% 3% 15%;
+  font-size: 3.2vmin;
 }
+
+.author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.author h2 {
+  padding-left: 15%;
+}
+
+.author img {
+  width: 100vw;
+  height: auto;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+footer {
+  height: auto;
+  background-color: #CBC3E3;
+  text-align: center;
+  padding: 5vh;
+}
+
+@media only screen and (min-width: 980px)  {
+    hgroup {
+      text-align:center;
+      padding: 2%;
+      background: darkgray;
+      margin-bottom: 4%;
+    }
+
+    p {
+      font-size: 18px;
+      padding: 3% 3% 3% 7%;
+    }
+    figcaption {
+      font-size: 12px;
+    }
+    main {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .author h2 {
+      padding: 0;
+    }
+
+    .author img {
+      max-width: 350px;
+      width: 25vw;
+    }
+ }
