@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form example</title>
+    <link rel="stylesheet" href="css/index_form.css">
+</head>
+<body>
+    <section id="form_wrapper">
+
+        <form action="mailto:santoromano@videotron.ca" method="post" enctype="text/plain" validate>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="John" name="firstname" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Smith" name="lastname" required>
+
+            <label for="mail">email</label>
+            <input type="email" id="mail" placeholder="John@somewhere.com" name="email" required>
+
+            <label for="tarea">Comments</label>
+              <textarea id="tarea" name="comments" placeholder="drop us a line"></textarea>
+
+            <input type="submit" value="Submit">
+          	<input type="reset" value="Reset">
+
+        </form>
+
+
+    </section>
+</body>
+</html>

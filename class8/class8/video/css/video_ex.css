@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+* {margin:0; padding: 0; box-sizing: border-box;}
+
+/* === DESKTOP LAYOUT > 980PX === */
+
+section#container {
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+video#bgvid {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+	/* background: url("../images/space.png") no-repeat center center;
+	background-size: cover; */
+}
+
+hgroup h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 15vmax;
+    letter-spacing: -.5vmax;
+    line-height: 15vmax;
+    color:#fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+hgroup h2 {
+    font-family: Gotham, Arial, Helvetica, sans-serif;
+    font-size: 2vmax;
+    /* letter-spacing: -.5vmax; */
+    color:#fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+article.text {
+    background-color: #fff;
+    padding:4vmax;
+    column-count: 3;
+    column-gap: 20px;
+}
+
+article h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 2.5vmax;
+    text-transform: uppercase;
+}
+
+article p {
+    font-family: Gotham, Arial, Helvetica, sans-serif;
+    color:#333;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+video.smvid {
+    width:100%;
+}
+
+/* === TABLET LAYOUT INHERITS FROM DESKTOP 600PX 980PX === */
+
+@media only screen and (max-width: 980px) {
+    article.text {
+        column-count: 2;
+    }
+    article h1 {
+        font-size: 3.5vmax;
+    }
+}
+
+
+/* === MOBILE LAYOUT INHERITS FROM DESKTOP AND THE TABLET 600PX === */
+
+@media only screen and (max-width: 600px) {
+    section#container {
+      background: url("../images/space.png") no-repeat center center;
+	    background-size: cover;
+    }
+    video#bgvid  {
+        display:none;
+        /* if you started with display: none on phone, you would then say display: block to make it visible in tablet view */
+    }
+    article.text {
+        column-count: 1;
+    }
+    article h1 {
+        font-size: 4vmax;
+    }
+}
