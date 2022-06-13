@@ -70,7 +70,16 @@
       </aside>
     </main>
     <footer>
-      <a href="#">Send us your book recommendations</a>
+      <h3>Send us your recommandations</h3>
+      <form action="mailto:sarah.demers11@gmail.com" method="post" enctype="text/plain" validate>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" placeholder="John" name="firstname" required>
+
+          <label for="tarea">Recommandation</label>
+          <textarea id="tarea" name="comments" placeholder="Recommandations please"></textarea>
+
+          <input type="submit" value="Submit">
+      </form>
     </footer>
 </body>
 </html>
