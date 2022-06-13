@@ -1,0 +1,20 @@
+body {
+  background-color: cadetblue;
+}
+
+h2 {
+  border-bottom: 2px solid cadetblue;
+}
+
+.container {
+  color: cadetblue;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+button {
+  background-color: #ffffff;
+  color: cadetblue;
+  border: 1px solid cadetblue;
+  padding: 5px;
+}

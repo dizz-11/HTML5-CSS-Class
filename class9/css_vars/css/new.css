@@ -1,0 +1,34 @@
+:root {
+  --blue: cadetblue;
+  --white: #eee;
+  --mainHead:52px;
+  --smHead:28px;
+}
+
+body {
+  background-color: var(--blue);
+}
+h1 {
+  font-size: var(--mainHead);
+}
+h2 {
+  font-size: var(--smHead);
+  border-bottom: 2px solid var(--blue);
+}
+
+.container {
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 15px;
+}
+.container p {
+  font-size: var(--smHead);
+}
+
+button {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: var(--smHead);
+  font-size: var(--smHead);
+}
