@@ -75,7 +75,7 @@ nav a.current {
   }
 }
 
-section.container {
+section#tolkien {
   width: 100%;
   height: 25vh;
   overflow: hidden;
@@ -85,6 +85,29 @@ section.container {
   background: url("../images/Volcano.png") no-repeat center center;
   background-size: cover;
 }
+
+section#herbert {
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/Dunes.png") no-repeat center center;
+  background-size: cover;
+}
+
+section#king {
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/darkness.png") no-repeat center center;
+  background-size: cover;
+}
+
 
 video {
   display: none;
@@ -131,6 +154,8 @@ p {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  background: #eee;
+  padding: 2%;
 }
 
 .author h2 {
@@ -250,7 +275,7 @@ label {
     text-align: center;
   }
 
-  section.container {
+  section#herbert, section#tolkien, section#king {
     height: 75vh;
   }
 

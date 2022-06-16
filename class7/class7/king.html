@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Book recommendations</title>
+
+   <link rel="stylesheet" href="css/style.css">
+ </head>
+
+ <body>
+   <header>
+     <nav>
+       <div class="navbar navanimation">
+         <a href="index.html">J.R.R. Tolkien</a>
+         <a href="herbert.html">Frank Herbert</a>
+         <a href="king.html" class="current">Stephen King</a>
+         <a href="maas.html">Sarah J. Maas</a>
+       </div>
+     </nav>
+     <hgroup>
+       <h1>Book recommendations</h1>
+       <h2>Stephen King</h2>
+     </hgroup>
+   </header>
+   <section id="king">
+     <video autoplay loop muted>
+       <source src="video/darkness.mp4" type="video/mp4" poster="images/darkness.png">
+     </video>
+   </section>
+   <main>
+     <div>
+       <article class="book">
+         <h3>The Dark Tower Series</h3>
+         <figure>
+           <img src="images/thegunslinger.jpeg" alt="The Gunslinger">
+           <figcaption>The Gunslinger, book 1 of 7 of the Dark Tower Series</figcaption>
+         </figure>
+         <p>In the story, Roland Deschain is the last living member of a knightly order known as gunslingers and the last of the line of "Arthur Eld", his world's analogue of King Arthur. Politically organized along the lines of a feudal society, it shares technological and social characteristics with the American Old West but is also magical. Many of the magical aspects have vanished from Mid-World, but traces remain as do relics from a technologically advanced society. Roland's quest is to find the Dark Tower, a fabled building said to be the nexus of all universes. Roland's world is said to have "moved on", and it appears to be coming apart at the seams. Mighty nations have been torn apart by war, entire cities and regions vanish without a trace and time does not flow in an orderly fashion. Sometimes, even the sun rises in the north and sets in the east.</p>
+       </article>
+       <article class="book">
+         <h3>The Stand</h3>
+         <figure>
+           <img src="images/thestand.webp" alt="The Stand">
+           <figcaption>The Stand</figcaption>
+         </figure>
+         <p>When a man escapes from a biological testing facility, he sets in motion a deadly domino effect, spreading a mutated strain of the flu that will wipe out 99 percent of humanity within a few weeks. The survivors who remain are scared, bewildered, and in need of a leader. Two emerge--Mother Abagail, the benevolent 108-year-old woman who urges them to build a community in Boulder, Colorado; and Randall Flagg, the nefarious "Dark Man," who delights in chaos and violence.
+         </p>
+       </article>
+       <article class="book">
+         <h3>Salem's Lot</h3>
+         <figure>
+           <img src="images/salemslot.jpeg" alt="Salem's lot">
+           <figcaption>Salem's Lot</figcaption>
+         </figure>
+         <p>Ben Mears has returned to Jerusalem's Lot in the hopes that living in an old mansion, long the subject of town lore, will help him cast out his own devils and provide inspiration for his new book. But when two young boys venture into the woods and only one comes out alive, Mears begins to realize that there may be something sinister at work and that his hometown is under siege by forces of darkness far beyond his control.</p>
+       </article>
+     </div>
+     <aside class="author">
+       <h2>About Stephen King</h2>
+       <img src="images/stephenking.jpeg" alt="Stephen King">
+       <h3>Biography</h3>
+       <div class="bio">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta mollitia fugit similique commodi, ipsa est, cumque dolores amet tempora necessitatibus nihil tenetur unde maxime. Quae perferendis, totam temporibus velit quos accusantium,
+           ullam impedit voluptates itaque pariatur tempora. Officia natus similique blanditiis adipisci vel, reiciendis ea dolores accusantium explicabo, odio, voluptates suscipit nobis perferendis iure placeat? Similique sunt voluptas explicabo
+           nihil velit modi delectus earum obcaecati veritatis nulla, ea ipsum soluta, dolore unde eveniet natus, fugit expedita. Quasi explicabo molestias officia debitis repellendus voluptates repudiandae suscipit quod, impedit nam atque quisquam
+           sapiente aliquam libero unde ipsum! Quis magnam, vero quos nihil.</p>
+       </div>
+       <h3>Other books from this author</h3>
+       <ul>
+         <li>The Green Mile</li>
+         <li>IT</li>
+         <li>The Shining, followed by Doctor Sleep</li>
+         <li>The Mr. Mercedes Series</li>
+         <li>Night Shift</li>
+       </ul>
+     </aside>
+   </main>
+   <footer>
+     <h3>Send us your recommandations</h3>
+     <form action="mailto:sarah.demers11@gmail.com" method="post" enctype="text/plain" validate>
+       <label for="fname">First Name</label>
+       <input type="text" id="fname" placeholder="John" name="firstname" required>
+
+       <label for="tarea">Recommandation</label>
+       <textarea id="tarea" name="comments" placeholder="Recommandations please"></textarea>
+
+       <input type="submit" value="Submit">
+     </form>
+   </footer>
+ </body>
+
+ </html>
