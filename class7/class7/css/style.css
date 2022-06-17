@@ -82,7 +82,7 @@ section#tolkien {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/Volcano.png") no-repeat center center;
+  background: url("../images/Volcano.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -93,7 +93,7 @@ section#herbert {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/Dunes.png") no-repeat center center;
+  background: url("../images/Dunes.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -104,7 +104,7 @@ section#king {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/darkness.png") no-repeat center center;
+  background: url("../images/darkness.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -115,7 +115,7 @@ section#maas {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/stars.png") no-repeat center center;
+  background: url("../images/stars.jpg") no-repeat center center;
   background-size: cover;
 }
 
