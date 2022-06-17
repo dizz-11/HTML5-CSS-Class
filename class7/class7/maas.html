@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Book recommendations</title>
+
+   <link rel="stylesheet" href="css/style.css">
+ </head>
+
+ <body>
+   <header>
+     <nav>
+       <div class="navbar navanimation">
+         <a href="index.html">J.R.R. Tolkien</a>
+         <a href="herbert.html">Frank Herbert</a>
+         <a href="king.html">Stephen King</a>
+         <a href="maas.html" class="current">Sarah J. Maas</a>
+       </div>
+     </nav>
+     <hgroup>
+       <h1>Book recommendations</h1>
+       <h2>Sarah J. Maas</h2>
+     </hgroup>
+   </header>
+   <section id="maas">
+     <video autoplay loop muted>
+       <source src="video/stars.mp4" type="video/mp4" poster="images/stars.png">
+     </video>
+   </section>
+   <main>
+     <div>
+       <article class="book">
+         <h3>A Court of Thorns and Roses Series</h3>
+         <figure>
+           <img src="images/acotr.jpeg" alt="A Court of Thorns and Roses">
+           <figcaption>A Court of Throns and Roses, the first of the as of yet unfinished series</figcaption>
+         </figure>
+         <p>When nineteen-year-old huntress Feyre kills a wolf in the woods, a beast-like creature arrives to demand retribution for it. Dragged to a treacherous magical land she only knows about from legends, Feyre discovers that her captor is not an animal, but Tamlin--one of the lethal, immortal faeries who once ruled their world. As she dwells on his estate, her feelings for Tamlin transform from icy hostility into a fiery passion that burns through every lie and warning she's been told about the beautiful, dangerous world of the Fae. But an ancient, wicked shadow over the faerie lands is growing, and Feyre must find a way to stop it . . . or doom Tamlin--and his world--forever.</p>
+       </article>
+       <article class="book">
+         <h3>Throne of Glass Series</h3>
+         <figure>
+           <img src="images/tog.jpeg" alt="Throne of Glass">
+           <figcaption>The entire Throne of Glass series</figcaption>
+         </figure>
+         <p>After serving out a year of hard labor in the salt mines of Endovier for her crimes, 18-year-old assassin Celaena Sardothien is dragged before the Crown Prince. Prince Dorian offers her her freedom on one condition: she must act as his champion in a competition to find a new royal assassin. Her opponents are men-thieves and assassins and warriors from across the empire, each sponsored by a member of the king's council. If she beats her opponents in a series of eliminations, she'll serve the kingdom for three years and then be granted her freedom. Celaena finds her training sessions with the captain of the guard, Westfall, challenging and exhilirating. But she's bored stiff by court life. Things get a little more interesting when the prince starts to show interest in her... but it's the gruff Captain Westfall who seems to understand her best. Then one of the other contestants turns up dead... quickly followed by another. Can Celaena figure out who the killer is before she becomes a victim? As the young assassin investigates, her search leads her to discover a greater destiny than she could possibly have imagined.
+         </p>
+       </article>
+       <article class="book">
+         <h3>Crescent City Series</h3>
+         <figure>
+           <img src="images/cc.jpeg" alt="House of Earth and Blood">
+           <figcaption>House of Earth and Blood, the first of the as of yet unfinished series</figcaption>
+         </figure>
+         <p>Bryce Quinlan had the perfect life―working hard all day and partying all night―until a demon murdered her closest friends, leaving her bereft, wounded, and alone. When the accused is behind bars but the crimes start up again, Bryce finds herself at the heart of the investigation. She’ll do whatever it takes to avenge their deaths. Hunt Athalar is a notorious Fallen angel, now enslaved to the Archangels he once attempted to overthrow. His brutal skills and incredible strength have been set to one purpose―to assassinate his boss’s enemies, no questions asked. But with a demon wreaking havoc in the city, he’s offered an irresistible deal: help Bryce find the murderer, and his freedom will be within reach. As Bryce and Hunt dig deep into Crescent City’s underbelly, they discover a dark power that threatens everything and everyone they hold dear, and they find, in each other, a blazing passion―one that could set them both free, if they’d only let it.</p>
+       </article>
+     </div>
+     <aside class="author">
+       <h2>About Sarah J. Maas</h2>
+       <img src="images/sarah.jpeg" alt="Sarah J. Maas">
+       <h3>Biography</h3>
+       <div class="bio">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta mollitia fugit similique commodi, ipsa est, cumque dolores amet tempora necessitatibus nihil tenetur unde maxime. Quae perferendis, totam temporibus velit quos accusantium,
+           ullam impedit voluptates itaque pariatur tempora. Officia natus similique blanditiis adipisci vel, reiciendis ea dolores accusantium explicabo, odio, voluptates suscipit nobis perferendis iure placeat? Similique sunt voluptas explicabo
+           nihil velit modi delectus earum obcaecati veritatis nulla, ea ipsum soluta, dolore unde eveniet natus, fugit expedita. Quasi explicabo molestias officia debitis repellendus voluptates repudiandae suscipit quod, impedit nam atque quisquam
+           sapiente aliquam libero unde ipsum! Quis magnam, vero quos nihil.</p>
+       </div>
+       <h3>Other books from this author</h3>
+       <ul>
+         <li>Catwoman: Soulstealer</li>
+       </ul>
+     </aside>
+   </main>
+   <footer>
+     <h3>Send us your recommandations</h3>
+     <form action="mailto:sarah.demers11@gmail.com" method="post" enctype="text/plain" validate>
+       <label for="fname">First Name</label>
+       <input type="text" id="fname" placeholder="John" name="firstname" required>
+
+       <label for="tarea">Recommandation</label>
+       <textarea id="tarea" name="comments" placeholder="Recommandations please" required></textarea>
+
+       <input type="submit" value="Submit">
+     </form>
+   </footer>
+ </body>
+
+ </html>
