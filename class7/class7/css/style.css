@@ -151,6 +151,7 @@ img {
 
 figcaption {
   font-size: 0.8em;
+  padding: 2%;
 }
 
 .book p {
@@ -290,6 +291,10 @@ label {
     height: auto;
     width: 100%;
     display: block;
+  }
+
+  img {
+    height: 50vh;
   }
 
   figcaption {
